@@ -1,0 +1,11 @@
+.my-form{
+    padding: 30px;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px 3px black;
+    background-color: white;
+}
+body{
+    background-color: aliceblue;
+}
