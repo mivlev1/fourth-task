@@ -11,8 +11,8 @@ $defaultValues = [
     'name' => '',
     'email' => '',
     'date' => '',
-    'gender' => 'O',
-    'limbs' => '4',
+    'gender' => 'Male',
+    'limbs' => '2',
     'contract' => ''
 ];
 // Складываем предыдущие значения полей в массив, если есть.
