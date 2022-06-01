@@ -27,14 +27,14 @@
             <div class="row mb-3">
                 <label for="inputName3" class="col-sm-2 col-form-label">Имя</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" name="name-field <?php if (!empty($errors['name'])) {print 'class="error"';} ?>
+                    <input type="text" class="form-control" name="name" <?php if (!empty($errors['name'])) {print 'class="error"';} ?>
                            value="<?php print $values['name']; ?>"/">
                 </div>
             </div>
             <div class="row mb-3">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
-                    <input class="form-control" name="email-field" <?php if (!empty($errors['email'])) {print 'class="error"';} ?>
+                    <input class="form-control" name="email" <?php if (!empty($errors['email'])) {print 'class="error"';} ?>
                            value="<?php print $values['email']; ?>"
                            type="email" />
                 </div>
@@ -51,13 +51,13 @@
                 <div class="row mb-3">
                     <div class="col-sm-10">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radio-gender" id="gridRadios1" value="Male" <?php if ($values['gender'] == 'Male') {print 'checked';} ?>/>
+                            <input class="form-check-input" type="radio" name="gender" id="gridRadios1" value="Male" <?php if ($values['gender'] == 'Male') {print 'checked';} ?>/>
                             <label class="form-check-label" for="gridRadios1">
                                 Мужчина
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radio-gender" id="gridRadios2" value="Female" <?php if ($values['gender'] == 'Female') {print 'checked';} ?> />
+                            <input class="form-check-input" type="radio" name="gender" id="gridRadios2" value="Female" <?php if ($values['gender'] == 'Female') {print 'checked';} ?> />
                             <label class="form-check-label" for="gridRadios2">
                                 Женщина
                             </label>
@@ -107,7 +107,7 @@
                 <div class="col-form-label col-sm-2 pt-0">Пользовательское соглашение</div>
                 <div class="col-sm-10">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck1" name="checkz" <?php if ($values['contract']) {print 'checked';} ?>/">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1" name="contract" <?php if ($values['contract']) {print 'checked';} ?>/">
                         <label class="form-check-label" for="gridCheck1" <?php if (array_key_exists('contract', $errors)) {print 'class="error"';} ?>>
                             С условиями согласен
                         </label>
